@@ -3,19 +3,22 @@ import SwappiServ from "../../services/swappi-service";
 import "./random-planet.scss";
 const RandomPlanet = () => {
   const [state, setState] = useState({
+    id: null,
     name: null,
     population: null,
     rotationPeriod: null,
     diameter: null,
   });
 
-  const { name, population, rotationPeriod, diameter } = state;
+  const { id, name, population, rotationPeriod, diameter } = state;
   useEffect(() => {
+    const id = Math.floor(Math.random() * 25) + 2;
     SwappiServ.getPlanet(10).then(
       ({ name, population, rotation_period, diameter }) =>
         setState((prev) => {
           return {
             ...prev,
+            id,
             name: name,
             population: population,
             rotationPeriod: rotation_period,
@@ -29,7 +32,10 @@ const RandomPlanet = () => {
     <div className="random">
       <div className="row">
         <div className="col s6 center">
-          <img src="" alt="" />
+          <img
+            src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`}
+            alt=""
+          />
         </div>
         <div className="col s6 center">
           <div>
