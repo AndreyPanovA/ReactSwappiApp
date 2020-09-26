@@ -2,11 +2,11 @@ import React from "react";
 // import "./header.scss";
 const PersonDitails = () => {
   return (
-    <ul class="collection">
-      <li class="collection-item">Alvin</li>
-      <li class="collection-item">Alvin</li>
-      <li class="collection-item">Alvin</li>
-      <li class="collection-item">Alvin</li>
+    <ul className="collection">
+      <li className="collection-item">Alvin</li>
+      <li className="collection-item">Alvin</li>
+      <li className="collection-item">Alvin</li>
+      <li className="collection-item">Alvin</li>
     </ul>
   );
 };

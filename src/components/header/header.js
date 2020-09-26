@@ -6,13 +6,19 @@ const Header = () => {
       <div>Header</div>
       <ul className="routes">
         <li>
-          <a>People</a>
+          <a href="https://dev.finmars.com/api/v1/ui/list-layout/?page=2">
+            People
+          </a>
         </li>
         <li>
-          <a>Planets</a>
+          <a href="https://dev.finmars.com/api/v1/ui/list-layout/?page=2">
+            Planets
+          </a>
         </li>
         <li>
-          <a>Starships</a>
+          <a href="https://dev.finmars.com/api/v1/ui/list-layout/?page=2">
+            Starships
+          </a>
         </li>
       </ul>
     </div>
